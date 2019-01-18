@@ -69,7 +69,7 @@ void loop(){
 
 
 //first round, just for fun
- for(uint16_t i=15; i>=0; i--) { //count pixel (unfortunately counting down because I want my counter going clockwise)
+ for(uint32_t i=15; i>=0; i--) { //count pixel (unfortunately counting down because I want my counter going clockwise)
       strip.setPixelColor(i, lila); 
       strip.show();
       delay(1000); //wait 1 second
@@ -85,9 +85,9 @@ void loop(){
 
 //from here it counts 16*16 rounds before starting the loop again
 
- for(uint16_t j=16; j>=0; j--){ //count rounds
+ for(uint32_t j=16; j>=0; j--){ //count rounds
 
-    for(uint16_t i=15; i>=0; i--) { //count pixel (unfortunately counting down because I want my counter going clockwise)
+    for(uint32_t i=15; i>=0; i--) { //count pixel (unfortunately counting down because I want my counter going clockwise)
        strip.setPixelColor(i, lila); 
        strip.show(); 
        delay(1000); 
